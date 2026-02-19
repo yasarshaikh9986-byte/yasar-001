@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MICRO PROJECT</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
+    *{margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      text-decoration: none;
+      list-style: none;
+      box-sizing: border-box;
+      }
+ 
+
+
+     body{height: 00px;}
+
+
+     html{scroll-behavior: smooth;}
+
+
+    .site-header {display: flex;
+              justify-content: space-between; 
+              align-items: center;
+              padding: 15px 40px;
+              background: linear-gradient(155deg ,rgb(200, 204, 211),rgba(15, 59, 143, 0.781));
+              -webkit-backdrop-filter: blur(10px);
+              backdrop-filter: blur(10px);
+              opacity: blur(10px);
+              top: 0;
+              width: 100%;
+              color: white;
+              }
+
+
+    .logo h1 {margin: 0;
+              cursor: pointer;
+              color: rgb(0, 0, 0);
+              font-family: "Luckiest Guy", cursive;
+              font-weight: 400;
+              font-style: normal;
+              }
+
+
+    .logo h1:hover{color: rgba(255, 255, 255, 0.904);
+                   }
+                    
+    
+    .nav-links ul{list-style: none;
+                   display: flex;
+                   gap: 45px;
+                   font-size: 18px;
+                   margin: 0;
+                   margin-right: 5px;
+                   padding: 0;
+                   }
+
+
+    .nav-links a {text-decoration: none;
+                  position: relative;
+                  color: rgb(0, 0, 0);
+                  }   
+                  
+    a:after{width: 0;
+            height: 3px;
+            position: absolute;
+            left: 0;
+            bottom: -2px;
+            border-radius: 20%;
+            background-color: transparent;
+            transition: ease-out 150ms;
+            content:'';}              
+
+
+    .nav-links a:hover{color: rgb(255, 252, 252);
+                  }
+
+    .nav-links a:hover::after{background: linear-gradient(135deg ,rgb(97, 134, 212),rgb(57, 106, 210),rgb(28, 40, 210));
+                               width: 100%;}              
+
+       
+    .hero{background-image: url(https://i.pinimg.com/1200x/72/7b/88/727b881415ff8e0a7385dfbf00642979.jpg);
+     height: 91vh;
+     opacity: blur(10px);
+     backdrop-filter: blur(10px);
+     background-position: center;
+     background-repeat: no-repeat;
+     display: flex;
+     text-align: center;
+     justify-content: center;
+     align-items: center;
+     background-attachment: fixed;
+     background-size: cover;
+     position: relative;
+     }
+     
+
+    .main-head{color: rgb(0, 0, 0);
+           background-color: transparent;
+           justify-content: center;
+           align-items: center;
+           border-color: rgb(255, 255, 255);
+           border-style: 4px solid;
+           max-height: 250px;
+           max-width: 500px;
+           height: 100%;
+           width: 100%;
+           margin-left: 500px auto;
+           margin-bottom: 70px auto;
+           font-size: 30px;
+          } 
+
+
+    .main-head h2{font-size: 70px;
+              font-family: "EB Garamond", serif;
+              font-optical-sizing: auto;
+              font-weight: 10;
+              font-style: normal;
+              margin-left: -35px auto;
+             }        
+
+
+    .submit {background: rgba(0, 0, 0, 0.25);
+         backdrop-filter: blur(7px);
+         border: 1px solid ;
+         box-shadow: 0 8px 20px rgba(0, 0, 0, 0.20);
+         max-width: 200px;
+         max-height: 40px;
+         height: 100%;
+         width: 100%;
+         border-radius: 15px;
+         cursor: pointer;
+         }  
+         
+
+    .submit:hover{background: linear-gradient(135deg ,rgb(172, 201, 255),rgb(56, 102, 187),rgba(16, 42, 185, 0.849));
+                  border-color: rgb(8, 36, 88) ;
+                  transform: scaleX(1.04);
+                  transition: 500ms;}
+
+
+    .section {padding: 100px 80px;
+          background: linear-gradient(135deg ,rgb(101, 138, 207),rgb(41, 93, 188));
+           }
+
+
+    .section h3 {text-align: center;
+                 font-size: 38px;
+                 color: white;
+                 margin-bottom: 60px auto;
+                 font-family: "Luckiest Guy", cursive;
+                 font-weight: 400;
+                 font-style: normal;
+                 color: black;
+                 letter-spacing: 2px;
+                 }
+
+
+    .products {display: grid;
+               grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+               gap: 40px;
+               }
+
+
+    .product {background: rgba(255,255,255,0.08);
+              backdrop-filter: blur(50px);
+              border-radius: 20px;
+              padding: 25px;
+              background-color: #9993932a;
+              border: 1px solid;
+              text-align: center;
+              }
+ 
+
+    .product:hover{transform: scale(1.02);
+                   transition: 400ms;
+                   }    
+ 
+
+    .product img {width: 300px;
+                  object-fit: cover;
+                  border-radius: 15px;
+                  }
+
+
+    .product h4 {margin: 20px 0 10px;
+                 font-size: 20px;
+                 color: #030303d3;
+                 }
+
+
+    .product p {font-size: 17px;
+                font: 900;
+                color: rgb(0, 0, 0);
+                }
+
+
+    .price {margin: 15px 0;
+            font-size: 22px;
+            font-weight: 600;
+            }
+
+
+    .product button {padding: 12px 30px;
+                     border: 1px solid #303030;
+                     background: transparent;
+                     -webkit-backdrop-filter: blur(10);
+                     backdrop-filter: blur(12px);
+                     color: #000000;
+                     border-radius: 25px;
+                     cursor: pointer;
+                     }
+                     
+
+    .product button:hover{background-color: rgb(255, 255, 255);
+                          transform: scaleX(1.04);
+                          transition: 500ms;
+                         }        
+
+    footer {padding: 50px 20px;
+         text-align: center;
+         background: #000;
+         border-top: 1px solid rgba(255,255,255,0.1);
+         }
+
+
+    footer p {font-size: 14px;
+              color: #777;
+              }
+
+    header nav ul {display: flex;
+                   justify-content: center;
+                   flex-wrap: wrap; 
+                     }
+                 
+                          
+    .loss {padding: 100px 70px;
+          background: linear-gradient(135deg ,rgb(146, 171, 219),rgba(3, 34, 92, 0.938));
+           }
+
+    .loss:hover{color: rgb(20, 20, 20);}
+
+               
+    .loss h3{text-align: center;
+             font-size: 38px;
+             color: white;
+             margin-bottom: 60px auto;
+             font-family: "Luckiest Guy", cursive;
+             font-weight: 400;
+             font-style: normal;
+             color: black;
+             margin-top: 20px;
+             letter-spacing: 2px;
+             }           
+               
+    
+    .loss p{max-width: 700px;
+            width: 100%;
+            margin-left: 30px;
+            font-size: 25px;
+            text-align: left;
+            line-height: 27px;
+            margin-bottom: 50px;
+            word-spacing: 10px;
+            float: left;} 
+                 
+    .loss img{width: 320px;
+              height: 400px;
+              margin-right: 45px;
+              filter: brightness(77%) blur(0.6px);
+              border: 2px solid black;
+              border-radius: 15px;
+              float: right;}           
+           
+</style>  
+</head>
+
+
+<body>
+    <header class="site-header">
+  <div class="logo">
+    <h1>NOIRVELLE</h1>
+  </div>
+  <nav class="nav-links">
+    <ul>
+      <li><a href="#home">HOME</a></li>
+      <li><a href="#collection">COLLECTION</a></li>
+      <li><a href="#arrival">ARRIVAL</a></li>
+      <li><a href="#about">ABOUT US</a></li>
+    </ul>
+  </nav>
+</header>
+<section id="home" class="hero">
+  <div class="main-head">
+    <h2 style="text-align: center;">NOIRVELLE</h2><br>
+    <p>Unforgettable Fragrance. <br> Pure Captivating Elegance.</p>
+    <button class="submit" style="align-items: center;">
+      <strong>BUY NOW</strong> 
+    </button>
+  </div>
+</section>
+
+
+<section id="collection" class="section">
+    <h3>Signature Collection</h3><br><br><br><br>
+    <div class="products">
+
+        <div class="product">
+            <img src="https://scentsationindia.com/cdn/shop/files/lemaleelixirabsolu1.jpg?v=1752071371">
+            <h4>JPG LE Male Elixir</h4>
+            <p>Top Note: Rose<br>
+               Mid Note: musk<br>
+               Base Note: Mint</p>
+            <div class="price">₹7,100</div>
+            <button><strong>BUY NOW</strong></button>
+        </div>
+
+        <div class="product">
+            <img src="https://images-static.nykaa.com/media/catalog/product/8/6/865e51f8435415032278_2.jpg?tr=w-500">
+            <h4>JPG Le Male Le Parfum</h4>
+            <p>Top Note: Jasmine<br>
+               Mid Note: Lemon<br>
+               Base Note: Basil</p>
+            <div class="price">₹9,750</div>
+            <button><strong>BUY NOW</strong></button>
+        </div>
+
+        <div class="product">
+            <img src="https://m.media-amazon.com/images/I/51FZP233GBL.jpg">
+            <h4>JPG Le Beau Le Parfum</h4>
+            <p>Top Note: Sandalwood<br>
+               Mid Note: Caramel<br>
+               Base Note: Amber</p>
+            <div class="price">₹8,100</div>
+            <button><strong>BUY NOW</strong></button>
+        </div>
+
+        <div class="product">
+            <img src="https://m.media-amazon.com/images/I/41V7P4FtCBL._SY300_SX300_QL70_FMwebp_.jpg">
+            <h4>Yves Saint Laurent</h4>
+            <p>Top Note: Honey<br>
+               Mid Note: Musk<br>
+               Base Note: Tonka bean</p>
+            <div class="price">₹15,750</div>
+            <button><strong>BUY NOW</strong></button>
+        </div>
+
+         <div class="product">
+            <img src="https://m.media-amazon.com/images/I/41vlnQp8A5L._SY300_SX300_QL70_FMwebp_.jpg">
+            <h4>Marisu Agar</h4>
+            <p>Top Note: Bergamot orange<br>
+               Mid Note: Violet leaf<br>
+               Base Note: Cedar</p>
+            <div class="price">₹1,999</div>
+            <button><strong>BUY NOW</strong></button>
+        </div>
+
+         <div class="product">
+            <img src="https://m.media-amazon.com/images/I/71xKd94nsHL._SX425_.jpg">
+            <h4>Lattafa Bade'e Al </h4>
+            <p>Top Note: Frankincense<br>
+               Mid Note: Apple<br>
+               Base Note: Musk</p>
+            <div class="price">₹3,600</div>
+            <button><strong>BUY NOW</strong></button>
+        </div>
+
+    </div>
+</section>
+
+
+<hr style="border: 1px solid black;">
+
+
+<section id="arrival" class="section">
+    <h3>NEW ARRIVAL</h3><br><br><br><br>
+    <div class="products">
+
+        <div class="product">
+            <img src="https://m.media-amazon.com/images/I/51SAI+dIAgL._SX522_.jpg">
+            <h4>Paco Rabanne Invictus</h4>
+            <p>Top Note: Peony<br>
+               Mid Note: Tuberose<br>
+               Base Note: Cocoa</p>
+            <div class="price">₹7,300</div>
+            <button><strong>BUY NOW</strong></button>
+        </div>
+
+        <div class="product">
+            <img src="https://m.media-amazon.com/images/I/814Gdegwz8L._SX425_.jpg">
+            <h4>Dolce & Gabbana</h4>
+            <p>Top Note: Bergamot orange<br>
+               Mid Note: Frankincense<br>
+               Base Note: Basil</p>
+            <div class="price">₹13,500</div>
+            <button><strong>BUY NOW</strong></button>
+        </div>
+
+        <div class="product">
+            <img src="https://m.media-amazon.com/images/I/817RmRfJvXL._SX425_.jpg">
+            <h4>Lattafa Khamrah </h4>
+            <p>Top Note: Grapefruit<br>
+               Mid Note: Sandalwood<br>
+               Base Note: Caramel</p>
+            <div class="price">₹3,550</div>
+            <button><strong>BUY NOW</strong></button>
+        </div>
+
+    </div>
+</section>
+
+
+<hr style="border: 1px solid black;">
+
+<section id="about" class="loss" style="height: 695px;">
+    <h3>ABOUT US</h3><br><br><br><br>
+    <div class="lost">
+    <p>&RightArrow; At <strong>NOIRVELLE</strong>, we believe fragrance is more than a scent—it is an identity and a lasting impression. Our name reflects mystery and elegance, capturing our passion for bold, refined, and unforgettable creations. Rooted in the art of fine perfumery, we blend modern creativity with timeless tradition to craft fragrances that awaken emotion and define individuality. Each scent is carefully composed using premium ingredients sourced from around the world, layered to create depth, balance, and long-lasting allure. From rich, sensual accords to soft, radiant notes, every Noirvelle perfume tells a unique story. We are committed to quality, authenticity, and sophistication, ensuring every bottle delivers a luxurious sensory experience. With Noirvelle, your presence lingers beautifully long after you leave.</p>    
+    <img src="https://images.pexels.com/photos/28843752/pexels-photo-28843752.jpeg" alt="#">    
+</div>
+</section>
+
+<hr style="border: 1px solid black;">
+
+<footer>
+    <p>© 2026 <b>'NOIRVELLE'</b> Shoe Garage. Crafted With Elegance.</p>
+</footer>
+</body>
