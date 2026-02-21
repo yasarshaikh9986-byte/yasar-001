@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice</title>
+    <style>
+          html{scroll-behavior: smooth;
+               height: 500vh;}
+
+
+         body{margin: 0;
+              padding: 0;}
+
+         .home{background-image: url(https://images.pexels.com/photos/17825341/pexels-photo-17825341.jpeg);
+               background-position: center;
+               background-repeat: no-repeat;
+               background-size: cover;
+               background-attachment: fixed;
+               width: 100%; 
+               position: relative;
+               padding: 0;
+               height: 100vh;}     
+
+         .hear{ background: linear-gradient(rgb(164, 164, 164));
+               -webkit-backdrop-filter: blur(4px);
+               backdrop-filter: blur(4px);
+               padding: 0;
+               margin-top: 10px;
+               display: inline-flex;
+               z-index: 2;
+               max-width: 800px;
+               width: 100%;
+               margin-left: 240px;
+               justify-content: space-between;
+               height: 60px;
+               position: fixed;
+               border-radius: 25px 25px 25px 25px;
+               }     
+
+         ul{display: flex;
+            gap: 40px;
+            list-style: none;
+            justify-content: center;
+            align-items: center;
+            margin-right: 30px;
+            margin-top: 20px;}   
+            
+         li a {text-decoration: none;
+                  position: relative;
+                  color: #4e5855;
+                  }   
+
+         h1{margin-left: 20px;
+            color: #57605d;
+            margin-top: 10px;} 
+
+         .home h2{position: absolute;
+                  top: 250px;
+                  background-image: url(https://images.pexels.com/photos/19090/pexels-photo.jpg);
+                  -webkit-background-clip: text;
+                  background-position: center;
+                  -webkit-text-fill-color: transparent;
+                  font-size: 50px;
+                  left: 560px;}   
+
+        .collection h3{text-align: center;
+                       justify-content: center;
+                       font-size: 42px;
+                       color: #57605d;} 
+
+        .prod{display: flex;
+              justify-content: space-evenly;
+              margin: 20px;
+              gap: 20px;}   
+
+        .product{background: white;
+                 padding: 25px;
+                 border: #4e5855 solid;
+                 border-radius: 20px;
+                 width: 300px;
+                 text-align: center;
+                 }  
+              
+        .product img{width: 240px;
+                      height: 270px;} 
+                      
+        .card h2{margin-bottom: 10px;
+                 }
+
+        .card p{margin-bottom: 15px;
+                }             
+        
+</style>
+</head>
+<body>
+    <section class="home" id="home">
+      <h2>SPRINTIVA</h2>
+<header>
+        <div class="hear">
+            <h1>SPRINTIVA</h1>
+            <div class="hear-nav">
+            <nav>
+              <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#collection">COLLECTION</a></li>
+                <li><a href="#accesories">ACCESORIES</a></li>
+                <li><a href="#about">ABOUT US</a></li>
+              </ul>
+            </nav>
+        </div>
+</div>
+</header>
+</section>
+
+ <section class="collection" id="collection"><br>
+    <h3>Collection</h3><br><br><br>
+  <div class="prod">
+
+      <div class="product">
+      <img src="https://images.pexels.com/photos/9853347/pexels-photo-9853347.jpeg" alt="#">
+      <h4>NIKE AIR FORCE</h4>
+      <p>white</p>
+      <button class="price">&dollar;170</button>
+      </div>
+
+      <div class="product">
+      <img src="https://images.pexels.com/photos/6540992/pexels-photo-6540992.jpeg" alt="#">
+      <h4>NIKE AIR FORCE</h4>
+      <p>white</p>
+      <button class="price">&dollar;170</button>
+      </div>
+
+      <div class="product">
+      <img src="https://images.pexels.com/photos/2529148/pexels-photo-2529148.jpeg" alt="#">
+      <h4>NIKE AIR FORCE</h4>
+      <p>white</p>
+      <button class="price">&dollar;170</button>
+      </div>
+    
+ </div>
+ </section>
+</body>
